@@ -1,7 +1,6 @@
-/* Basic styling for the game board */
 body {
     font-family: 'San Francisco', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-    background: linear-gradient(135deg, #e0f7fa, #b3e5fc); /* Light gradient background */
+    background: linear-gradient(135deg, #e0f7fa, #b3e5fc);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -10,16 +9,14 @@ body {
     color: #333;
 }
 
-/* Container Styling */
 .container {
     text-align: center;
     background: #ffffff;
     padding: 20px;
-    border-radius: 20px; /* More rounded corners for iOS look */
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15); /* Subtle shadow for depth */
+    border-radius: 20px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
 }
 
-/* Board Styling */
 .board {
     display: grid;
     grid-template-columns: repeat(3, 120px);
@@ -28,53 +25,48 @@ body {
     margin: 20px auto;
     background-color: #ffffff;
     padding: 10px;
-    border-radius: 20px; /* Rounded corners for the board */
-    border: 2px solid #ddd; /* Subtle border */
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Subtle shadow for depth */
+    border-radius: 20px;
+    border: 2px solid #ddd;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
 }
 
-/* Cell Styling */
 .cell {
     width: 120px;
     height: 120px;
-    background: #f9f9f9; /* Soft white background for cells */
+    background: #f9f9f9;
     display: flex;
     align-items: center;
     justify-content: center;
     font-size: 3rem;
     font-weight: bold;
     cursor: pointer;
-    border: 2px solid #e0e0e0; /* Light border */
-    border-radius: 15px; /* Rounded corners for cells */
+    border: 2px solid #e0e0e0;
+    border-radius: 15px;
     transition: background 0.3s, transform 0.3s, box-shadow 0.3s, border-color 0.3s;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
 }
 
-/* Hover Effect for Cells */
 .cell:hover {
-    background: #e0e0e0; /* Slightly darker background on hover */
+    background: #e0e0e0;
     transform: scale(1.05);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
-    border-color: #ccc; /* Darker border on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-color: #ccc;
 }
 
-/* Styling for X */
 .cell.x::before {
     content: 'X';
-    color: #ff3b30; /* iOS Red for X */
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2); /* Slight shadow for better visibility */
-    transform: rotate(-10deg); /* Slight rotation for style */
+    color: #ff3b30;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+    transform: rotate(-10deg);
 }
 
-/* Styling for O */
 .cell.o::before {
     content: 'O';
-    color: #007aff; /* iOS Blue for O */
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2); /* Slight shadow for better visibility */
-    transform: rotate(10deg); /* Slight rotation for style */
+    color: #007aff;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+    transform: rotate(10deg);
 }
 
-/* Status Styling */
 #status {
     font-size: 2rem;
     margin: 20px 0;
@@ -83,23 +75,22 @@ body {
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
 }
 
-/* Reset Button Styling */
 #reset-btn {
     display: block;
     margin: 20px auto;
     padding: 12px 24px;
     font-size: 1.2rem;
     cursor: pointer;
-    background: #007aff; /* iOS Blue background */
+    background: #007aff;
     color: white;
     border: none;
-    border-radius: 12px; /* Rounded corners */
+    border-radius: 12px;
     transition: background 0.3s, box-shadow 0.3s, transform 0.3s;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 #reset-btn:hover {
-    background: #0051a8; /* Darker blue on hover */
+    background: #0051a8;
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
     transform: scale(1.05);
 }
@@ -108,7 +99,6 @@ body {
     outline: none;
 }
 
-/* Animations */
 @keyframes fadeIn {
     from {
         opacity: 0;
